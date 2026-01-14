@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -8,7 +6,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">App2Lettres</h3>
             <p className="text-gray-300">
-              Plateforme d'apprentissage innovante pour maîtriser l'art des lettres et de la communication.
+              Plateforme d&apos;apprentissage innovante pour maîtriser l&apos;art des lettres et de la communication.
             </p>
           </div>
           <div>

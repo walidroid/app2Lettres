@@ -1,54 +1,39 @@
-# Application Web Interactive - Production et Publication de Médias
+# App2Lettres - Application d'Apprentissage de Rédaction
 
-Une application web éducative interactive pour l'apprentissage de la production et publication de médias numériques.
+Une application web éducative interactive pour l'apprentissage de la rédaction de lettres professionnelles, académiques et personnelles.
 
 ## Structure du Projet
 
-Ce projet est organisé de manière professionnelle avec la structure suivante :
+Ce projet est une application React développée avec Vite.
 
 ```
 app2Lettres/
 ├── public/                 # Fichiers statiques
-│   └── index.html         # Point d'entrée HTML
-├── src/                   # Code source principal
-│   ├── components/        # Composants React
-│   │   ├── Header.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Hero.jsx
-│   │   ├── ProgressTracker.jsx
-│   │   ├── SessionCard.jsx
-│   │   ├── SessionDetail.jsx
-│   │   ├── badge.jsx
-│   │   └── card.jsx
-│   ├── styles/           # Fichiers CSS
-│   │   └── App.css
-│   ├── assets/           # Ressources statiques
-│   │   ├── images/       # Images du projet
-│   │   └── icons/        # Icônes (à ajouter)
-│   ├── utils/            # Utilitaires et helpers
-│   ├── pages/            # Pages principales (à développer)
-│   ├── App.jsx           # Composant principal
-│   ├── main.jsx          # Point d'entrée React
-│   └── sessionsData.js   # Données des sessions
-├── docs/                 # Documentation
-│   ├── Application Web Interactive - Production et Publication de Médias.md
-│   └── Conception Application Web - Cours Production et Publication de Médias.md
-└── README.md            # Ce fichier
+├── src/                    # Code source principal
+│   ├── components/         # Composants React
+│   │   ├── SessionList.jsx # Liste des sessions
+│   │   ├── SessionCard.jsx # Carte d'une session
+│   │   ├── SessionDetail.jsx # Page de détail d'une session
+│   │   └── ...
+│   ├── sessionsData.js     # Données des sessions (Lettres)
+│   ├── App.jsx             # Configuration des routes
+│   └── main.jsx            # Point d'entrée
+└── README.md               # Ce fichier
 ```
 
 ## Technologies Utilisées
 
 - **React** - Bibliothèque JavaScript pour interfaces utilisateur
 - **Vite** - Outil de build rapide
-- **CSS** - Styles et mise en page
-- **JavaScript ES6+** - Langage de programmation
+- **React Router** - Navigation
+- **Tailwind CSS** - Styles
+- **PropTypes** - Validation de types
 
 ## Fonctionnalités
 
-- Interface interactive pour suivre les sessions de formation
-- Système de progression visuelle
-- Composants réutilisables (Header, Footer, Cards, etc.)
-- Support multilingue (français)
+- Catalogue de sessions de formation sur différents types de lettres (Formelles, Informelles, etc.)
+- Page de détail pour chaque session avec objectifs et durée
+- Suivi de progression (interface visuelle)
 - Design responsive
 
 ## Installation et Lancement
@@ -74,32 +59,16 @@ npm run dev
 npm run build
 ```
 
-## Structure des Composants
+## Structure des Sessions
 
-### Composants Principaux
-- **App.jsx** : Composant racine de l'application
-- **Header.jsx** : En-tête de navigation
-- **Footer.jsx** : Pied de page
-- **Hero.jsx** : Section principale d'accueil
-
-### Composants de Session
-- **SessionCard.jsx** : Carte représentant une session
-- **SessionDetail.jsx** : Détails d'une session spécifique
-- **ProgressTracker.jsx** : Indicateur de progression
-
-### Composants UI
-- **card.jsx** : Composant de carte générique
-- **badge.jsx** : Composant badge/badge
-
-## Assets et Ressources
-
-Les images et ressources sont organisées dans `src/assets/` :
-- **Images de sessions** : `session*_*.png`
-- **Captures d'écran** : `localhost_*.webp`
+Les données des sessions sont définies dans `src/sessionsData.js` et incluent :
+- Lettres Formelles
+- Lettres Informelles
+- Lettres Professionnelles
+- Lettres Académiques
+- Et plus...
 
 ## Contribution
-
-Pour contribuer au projet :
 
 1. Créez une branche pour votre fonctionnalité
 2. Suivez les conventions de code existantes
@@ -108,8 +77,4 @@ Pour contribuer au projet :
 
 ## Licence
 
-Ce projet est développé dans le cadre d'un cours sur la production et publication de médias numériques.
-
-## Contact
-
-Pour toute question ou suggestion, veuillez contacter l'équipe de développement.
+MIT
