@@ -1,14 +1,12 @@
-import React from 'react';
-
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+    <section className="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20" id="home">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-5xl font-bold mb-6">
-          Maîtrisez l'Art des Lettres
+          Maîtrisez l&apos;Art des Lettres
         </h1>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Découvrez notre plateforme innovante d'apprentissage conçue pour vous aider 
+          Découvrez notre plateforme innovante d&apos;apprentissage conçue pour vous aider
           à exceller dans la rédaction de lettres professionnelles et personnelles.
         </p>
         <div className="space-x-4">

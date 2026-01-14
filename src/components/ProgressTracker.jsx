@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ProgressTracker = () => {
   const progressData = [
     { name: 'Lettres Formelles', progress: 75, color: 'bg-blue-500' },

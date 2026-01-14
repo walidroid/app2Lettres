@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +13,10 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors">Accueil</a>
-            <a href="#sessions" className="text-gray-700 hover:text-blue-600 transition-colors">Sessions</a>
-            <a href="#progress" className="text-gray-700 hover:text-blue-600 transition-colors">Progrès</a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">Accueil</Link>
+            <a href="/#sessions" className="text-gray-700 hover:text-blue-600 transition-colors">Sessions</a>
+            <a href="/#progress" className="text-gray-700 hover:text-blue-600 transition-colors">Progrès</a>
+            <a href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
           </nav>
 
           <button 
@@ -31,10 +32,10 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <nav className="flex flex-col space-y-2">
-              <a href="#home" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Accueil</a>
-              <a href="#sessions" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Sessions</a>
-              <a href="#progress" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Progrès</a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Contact</a>
+              <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Accueil</Link>
+              <a href="/#sessions" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Sessions</a>
+              <a href="/#progress" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Progrès</a>
+              <a href="/#contact" className="text-gray-700 hover:text-blue-600 transition-colors py-2">Contact</a>
             </nav>
           </div>
         )}
